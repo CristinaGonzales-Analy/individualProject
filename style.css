@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #6930C3;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  /*height: 300px;  only for demonstration, should be removed */
+  background: #FFFFFF;
+ padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #5390D9;
+  /* height: 300px;  only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #5E60CE;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* General styling improvements */
+
+body {
+    font-family: 'Arial', sans-serif; /* Use a modern, clean font */
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for responsive design */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Button styling */
+button, .button {
+    background-color: #4CAF50; /* A primary color for buttons */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 1em;
+}
+
+button:hover, .button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Navigation styling */
+nav a {
+    color: #4CAF50;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #333;
+}
+
+/* Flex and Grid layouts for responsive design */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Card styles */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #4CAF50;
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+    border-radius: 5px;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Universal reset and box-sizing for consistency */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Updated body styling for a fresh look */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f8fa; /* Light grey background for a subtle tone */
+    color: #333; /* Dark grey for primary text */
+    line-height: 1.6;
+}
+
+/* Header styling for a modern and professional feel */
+header {
+    background-color: #001f3f; /* Dark blue-black color */
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+/* Flexbox layout for main content and nav */
+main, nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Navigation styling */
+nav {
+    flex: 1;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Styling for nav links */
+nav a {
+    color: #007bff; /* Light blue */
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #d1ecf1; /* Light blue highlight on hover */
+}
+
+/* Button styling */
+button {
+    background-color: #007bff; /* Light blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Layout with Grid for main content */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Two-column layout */
+    gap: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
